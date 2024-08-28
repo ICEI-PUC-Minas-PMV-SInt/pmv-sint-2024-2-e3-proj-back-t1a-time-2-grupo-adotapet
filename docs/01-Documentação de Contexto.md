@@ -14,11 +14,11 @@ O objetivo geral é criar uma aplicação WEB para conectar pessoas com interess
 
 Como objetivos específicos, podemos ressaltar: 
 
-Oferecer um meio de comunicação entre uma pessoa que deseja adotar e uma pessoa que deseja doar. 
+- Oferecer um meio de comunicação entre uma pessoa que deseja adotar e uma pessoa que deseja doar. 
 
-Uma forma de reduzir a taxa de animais em situação de vulnerabilidade. 
+- Uma forma de reduzir a taxa de animais em situação de vulnerabilidade. 
 
-Aumentar o engajamento de adoções 
+- Aumentar o engajamento de adoções 
 
 ## Justificativa
 
