@@ -40,8 +40,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 25/11/2024.     |
+|02| O aplicativo deve se restringir às tecnologias básicas da Web no Frontend, utilizando a biblioteca ReactJs. |
+|03| O aplicativo deve se restringir à linguagem C# no Backend.                                                  |
+|04| A equipe não pode subcontratar o desenvolvimento do trabalho.                                               |
+|05| Usar apenas o GitHub como repositório remoto.                                                               |
+|06| Usar metodologia de Scrum para o desenvolvimento do projeto.                                                |
 
 ## Diagrama de Casos de Uso
 
