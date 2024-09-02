@@ -3,16 +3,30 @@
 
 ## Personas
 
-Narcisa Neves, tem 30 anos, é vendedora de imóveis e mãe solo. Gosta de passar seu tempo livre lendo e vendo vídeos engraçados de animais na internet. Sempre quis adotar um gatinho para usa filha mas nunca conseguiu achar alguém que estivesse doando um filhote.
+*Narcisa Neves*, tem 30 anos, é vendedora de imóveis e mãe solo. Gosta de passar seu tempo livre lendo e vendo vídeos engraçados de animais na internet. Sempre quis adotar um gatinho para usa filha mas nunca conseguiu achar alguém que estivesse doando um filhote.
+
+*Ellen Queiroz*, tem 45 anos, é chefe executiva em uma ONG de proteção de animais. Gosta de ler e de participar de coletiva de impressa com ONGS parceiras. Hoje encontra muita dificuldade de encontrar de forma rápida novas famílias para os animais resgatados.
+
+*José Lopes*, tem 41 anos, é assistente veterinário e provedor de lar temporário para animais resgatados. Gosta de passar o tempo livre com fotografia e se voluntariando em abrigo de animais. Como tem como projeto pessoal regatar e cuidar de animais de rua até que estejam saudáveis e prontos para adoção, José muitas vezes encontra dificuldade para achar pessoas dispostas a realizarem a adoção desses animais.
+
+*Maria Antônia*, tem 55 anos, é dona de casa e cabelereira. Gosta de fazer crochê e se sente muito sozinha. Como sempre amou animais e nunca teve a oportunidade de ter um, hoje busca um pet para fazer companhia mas está tendo muita dificuldade para encontrar algum animal para adotar.
+
+*Edson Souza*, tem 45 anos, é mecânico. Gosta de passar o tempo livre jogando futebol e xadrez. Deseja melhorar sua comunidade local criando um abrigo de animais e por consequência, precisará de uma forma prática de compartilhar os animais que já estão prontos para serem adotados.
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-| QUERO/PRECISO ...                                   | PARA ...                                                   |
-| --------------------------------------------------- | ---------------------------------------------------------- |
-| EU COMO...                                          |
-| Nacisa (Usuário comum) | Uma forma segura e prática para adotar um filhote de gato. | Para realizar o sonho da minha filha. |
+| EU COMO... `PERSONA`          | QUERO/PRECISO ... `FUNCIONALIDADE`                                                                                   | PARA ... `MOTIVO/VALOR`                                                                                                                          |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Nacisa (Usuário comum)        | Uma forma segura e prática para adotar um filhote de gato.                                                           | Para realizar o sonho da minha filha.                                                                                                            |
+| Nacisa (Usuário comum)        | Saber um pouco melhor sobre as características do animal.                                                            | Para saber se é um animal calmo e não agressivo para estar no mesmo ambiente que uma criança.                                                    |
+| Ellen Queiroz (Usuário comum) | Facilitar que a ONG que faço parte possa ter o contato entre os doadores de pets de forma mais rápida e responsável. | Para que o trabalho da ONG possa ser mais expressivo e possamos salvar mais animais em situação de risco.                                        |
+| Ellen Queiroz (Usuário comum) | Buscar por animais que precisam urgentemente de cuidados e de um novo lar.                                           | Para realizar um dos principais objetivos da ONG que é proteger os animais.                                                                      |
+| José Lopes (Usuário comum)    | Um meio de compartilhar a adoção dos animais que resgato.                                                            | Muitas vezes fico com mais animais do que posso cuidar por conta da falta de meios para compartilhar os animais que já estão prontos para adoção |
+| Maria Antônia (Usuário comum) | Encontrar uma forma de conseguir adotar um pet.                                                                      | Para ter a companhia de um alegre cachorro no dia a dia.                                                                                         |
+| Edson Souza (Usuário comum)   | Uma forma eficiente e segura de adotar pets.                                                                         | Abrir e manter um abrigo de pets em sua comunidade local.                                                                                        |
+| Edson Souza (Usuário comum)   | Uma forma de compartilhar os pets disponíveis para adoção em seu abrigo.                                             | Continuar seu objetivo de facilitar a adoção de pets em sua comunidade local.                                                                    |
 
 
 ## Requisitos
