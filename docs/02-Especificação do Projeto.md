@@ -37,10 +37,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+| **ID** | **Descrição do Requisito**                                                                                                          | **Prioridade** |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| RNF-01 | A aplicação deve ser publicada em um ambiente acessível publicamente na Internet ([Repl.it](http://Repl.it), GitHub Pages, Heroku); | Alta           |
+| RNF-02 | A aplicação deverá ser responsiva, permitindo a visualização em celulares e outros dispositivos de forma adequada.                  | Alta           |
+| RNF-03 | A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade                                              | Média          |
+| RNF-04 | A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge)                   | Alta           |
+| RNF-05 | A aplicação deve ser escalável para suportar quantidade massiva de acesso.                                                          | Alta           |
+| RNF-06 | A aplicação deve usar serviço de object storage para armazenar arquivos estáticos.                                                  | Alta           |
 
 
 ## Restrições
