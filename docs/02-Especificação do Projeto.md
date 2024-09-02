@@ -21,10 +21,19 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+| **ID** | **Descrição do Requisito**                                                                                                                                          | **Prioridade** |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| RF-01  | O site deve apresentar na tela principal uma lista de pets e consultar uma API, que está em desenvolvimento, para obter essa lista de pets disponíveis para adoção. | Alta           |
+| RF-02  | Para cada postagem haverá uma imagem e descrição correspondente animal disponível para adoção. Com imagem, descrição e motivo para adoção.                          | Alta           |
+| RF-03  | O site deve oferecer um filtro de pesquisa para melhorar a experiencia do usuário ao buscar o pet desejado.                                                         | Média          |
+| RF-04  | O site deve possuir um campo para visualizar a informação de contato de quem está oferecendo o pet para adoção.                                                     | Alta           |
+| RF-05  | O site deve permitir o compartilhamento da publicação sobre a adoção de um pet.                                                                                     | Baixa          |
+| RF-06  | O site deve permitir salvar o anúncio do pet como favorito.                                                                                                         | Média          |
+| RF-07  | O site deve permitir visualizar os pets marcados como favorito.                                                                                                     | Média          |
+| RF-08  | O site deve permitir que o usuário possa criar anúncio de adoção de pet.                                                                                            | Alta           |
+| RF-09  | O site deve possuir quantidade de favoritos para os anúncios de pet.                                                                                                | Baixa          |
+| RF-10  | O site deve possuir uma tela que permite o usuário se cadastrar                                                                                                     | Alta           |
+| RF-11  | O site deve possuir uma tela de login, permitindo o usuário a autenticar em sua conta cadastrada.                                                                   | Alta           |
 
 ### Requisitos não Funcionais
 
