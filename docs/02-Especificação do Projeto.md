@@ -92,4 +92,5 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 | 10 | Doador   | Apagar anúncio       | Caso o doador conseguiu realizar uma adoção, poderá apagar o anúncio a qualquer momento.                           |
 
 
-  ![diagrama de casos de uso](https://github.com/user-attachments/assets/a9d38ef3-a496-4548-a8e4-e64856a643f2)
+  
+![Diagrama de casos de uso](https://github.com/user-attachments/assets/b72e7f59-8159-42a7-9641-c1a5881dc141)
