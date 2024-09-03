@@ -18,6 +18,8 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
+#### Link interativo: https://www.figma.com/design/EtOqz9lBSnizx8QVr6c92J/AdotaPet?node-id=0-1&node-type=CANVAS&t=OxRQ7rcMKUgHyvic-0
+
 
  
 ![ordem dos wireframes](https://github.com/user-attachments/assets/b7bfe577-c37e-41b8-9af2-f776915d5178)
