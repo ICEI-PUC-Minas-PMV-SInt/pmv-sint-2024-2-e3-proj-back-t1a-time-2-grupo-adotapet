@@ -77,3 +77,20 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+
+| ID | Atores   | Casos de Uso         | Descrição                                                                                                          |
+| -- | -------- | -------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| 01 | Adotante | Fazer Login          | O adotante e o Doador devem realizar o login da sua conta no site.                                                 |
+| 02 | Adotante | Verificar cadastro   | Será realizado uma verificação para confirmação de cadastro.                                                       |
+| 03 | Adotante | Exibir erro de login | Caso o usuário não tenha cadastro na plataforma, ele deverá se direcionar para a página de cadastro.               |
+| 04 | Adotante | Realizar Cadastro    | Caso o usuário queira adotar ou anunciar mas não tem cadastro, o mesmo precisa realizar o cadastro para prosseguir.|
+| 05 | Adotante | Ver Anúncios         | O usuário obtendo cadastro ou não, ele consegue somente visualizar os anúncios.                                    |
+| 06 | Adotante | Adotar pet           | Com o login efetuado, o usuário poderá clicar no anúncio e então visualizar mais informações sobre o animal.       |
+| 07 | Adotante | Entrar em contato    | O usuário que tem interesse no animal desejado, poderá entrar em contato com o doador e prosseguir com a adoção.   |
+| 08 | Adotante | Favoritar anúncio    | O usuário tem a possibilidade de favoritar um anúncio caso queira visualizar o mesmo anúncio mais tarde.           |
+| 09 | Doador   | Inserir anúncio      | O doador pode inserir um anúncio normalmente depois de ter realizado o login e portando todos os dados do animal.  |
+| 10 | Doador   | Apagar anúncio       | Caso o doador conseguiu realizar uma adoção, poderá apagar o anúncio a qualquer momento.                           |
+
+
+
+
