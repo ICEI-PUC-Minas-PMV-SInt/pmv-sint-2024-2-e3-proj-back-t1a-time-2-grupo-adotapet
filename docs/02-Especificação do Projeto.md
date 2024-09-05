@@ -88,9 +88,10 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 | 06 | Adotante | Adotar pet           | Com o login efetuado, o usuário poderá clicar no anúncio e então visualizar mais informações sobre o animal.       |
 | 07 | Adotante | Entrar em contato    | O usuário que tem interesse no animal desejado, poderá entrar em contato com o doador e prosseguir com a adoção.   |
 | 08 | Adotante | Favoritar anúncio    | O usuário tem a possibilidade de favoritar um anúncio caso queira visualizar o mesmo anúncio mais tarde.           |
-| 09 | Doador   | Inserir anúncio      | O doador pode inserir um anúncio normalmente depois de ter realizado o login e portando todos os dados do animal.  |
-| 10 | Doador   | Apagar anúncio       | Caso o doador conseguiu realizar uma adoção, poderá apagar o anúncio a qualquer momento.                           |
+| 09 | Adotante | Inserir anúncio      | O doador pode inserir um anúncio normalmente depois de ter realizado o login e portando todos os dados do animal.  |
+| 10 | Adotante | Apagar anúncio       | Caso o doador conseguiu realizar uma adoção, poderá apagar o anúncio a qualquer momento.                           |
 
 
   
-![Diagrama de casos de uso](https://github.com/user-attachments/assets/b72e7f59-8159-42a7-9641-c1a5881dc141)
+
+![diagrama de casos de uso atualizado](https://github.com/user-attachments/assets/697818cb-adde-4bf8-8cf9-045b3ae5291e)
