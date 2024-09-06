@@ -6,7 +6,9 @@
 
 `Terciro semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+No cenário contemporâneo, em muitos países existem animais em situação de abandono e muitas pessoas que precisam de uma forma segura e eficiente de localizar animais para adoção. Pensando nesses impedimentos, resolvemos criar uma forma de conectar essas duas necessidades, pets precisando de um lar e pessoas dispostas a adotar com responsabilidade.
+
+Neste contexto, é importante a implementação de um aplicativo web onde é possível facilitar o processo de adoção por meio do uso de tecnologia, ou seja, uma plataforma WEB onde o usuário pode se conectar com o doador do pet e quem procura adotar um pet.
 
 ## Integrantes
 
