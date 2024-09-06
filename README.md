@@ -4,7 +4,7 @@
 
 `Eixo 3 - Projeto: Desenvolvimento Web Back-End - Turma 01 - 2024/2`
 
-`Terciro semestre`
+`Terceiro semestre`
 
 No cenário contemporâneo, em muitos países existem animais em situação de abandono e muitas pessoas que precisam de uma forma segura e eficiente de localizar animais para adoção. Pensando nesses impedimentos, resolvemos criar uma forma de conectar essas duas necessidades, pets precisando de um lar e pessoas dispostas a adotar com responsabilidade.
 
