@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# Adota Pet
 
 `Tecnologia em Sistemas para Internet`
 
