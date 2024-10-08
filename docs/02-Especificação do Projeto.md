@@ -48,6 +48,7 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 | RF-09  | O site deve possuir quantidade de favoritos para os anúncios de pet.                                                                                                | Baixa          |
 | RF-10  | O site deve possuir uma tela que permite o usuário se cadastrar                                                                                                     | Alta           |
 | RF-11  | O site deve possuir uma tela de login, permitindo o usuário a autenticar em sua conta cadastrada.                                                                   | Alta           |
+| RF-12  | O site deve possuir um Administrador onde analisa as publicações denunciadas, e faz a exclusão.                                                                     | Alta           |
 
 ### Requisitos não Funcionais
 
