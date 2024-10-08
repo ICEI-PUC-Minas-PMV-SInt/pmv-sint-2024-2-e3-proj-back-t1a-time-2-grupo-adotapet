@@ -90,9 +90,10 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 | 08 | Adotante | Favoritar anúncio    | O usuário tem a possibilidade de favoritar um anúncio caso queira visualizar o mesmo anúncio mais tarde.           |
 | 09 | Adotante | Inserir anúncio      | O doador pode inserir um anúncio normalmente depois de ter realizado o login e portando todos os dados do animal.  |
 | 10 | Adotante | Apagar anúncio       | Caso o doador conseguiu realizar uma adoção, poderá apagar o anúncio a qualquer momento.                           |
+| 11 | Administrador | Apagar anúncio  | O administrador pode analisar e excluir anúncios de qualquer usuário do sistema.                                   |
 
 
   
 
 
-![diagrama de casos de uso](https://github.com/user-attachments/assets/6726ba6f-11b2-47df-9bb2-3d12a37baa7f)
+![diagrama de casos de uso atual](https://github.com/user-attachments/assets/78066811-4a11-42f8-9cf7-1e07985d901e)
