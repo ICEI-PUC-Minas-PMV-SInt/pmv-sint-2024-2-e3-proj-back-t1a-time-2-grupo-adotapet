@@ -28,6 +28,8 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 ## Modelo Físico (DDL)
 
 Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+### Acesse por esse link: 
+https://github.com/ICEI-PUC-Minas-PMV-SInt/pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet/blob/main/src/db/DDL.sql
 
 ## Instruções SQL de Manipulação do BD (DML)
 
