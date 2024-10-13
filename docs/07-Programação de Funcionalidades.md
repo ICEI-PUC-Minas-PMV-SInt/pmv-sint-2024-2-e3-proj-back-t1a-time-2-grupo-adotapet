@@ -9,6 +9,7 @@ Implementação do sistema descritas por meio dos requisitos funcionais e/ou nã
 ## Anúncios
 
 Feito por: Beatriz Iglesias
+
 Descrição: Criei um CRUD simples de anúncios com o intuito de me familiarizar com o framework, a tabela Anuncios criada é meramente ilustrativa com campos fictícios.
 Achei o framework bem simples de usar e a geração automática de views acelera bastante o desenvolvimento, não tive difivuldades na utilização da ferramenta.
 
