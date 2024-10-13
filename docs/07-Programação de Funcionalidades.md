@@ -30,3 +30,13 @@ Achei o framework bem simples de usar e a geração automática de views acelera
   ![Diagrama ER Adota Pet](img/criar-anuncios.png)
 
 
+## Login
+
+Feito por: Leandro Tavares
+
+Descrição: Tive dificuldades com a conexão com o banco de dados devido a string de conexão da vídeo aula não funcionar no meu projeto. 
+Achei interessante a praticidade do framework do MVC, pois acelera a produção do projeto. 
+
+- Tela de Login
+
+  ![Diagrama ER Adota Pet](img/tela-login.png)
