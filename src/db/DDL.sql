@@ -27,3 +27,9 @@ Cod_usuario char(13) PRIMARY KEY,
 	Telefone varchar(11),
     Email varchar(40)
     );
+
+ALTER TABLE Pet
+ADD CONSTRAINT FK_Pet_Usuario FOREIGN KEY (Usuario) REFERENCES Usuario(Cod_usuario);
+
+ALTER TABLE Pet
+ADD CONSTRAINT FK_Pet_Contato FOREIGN KEY (Contato) REFERENCES Contato(Cod_usuario);
