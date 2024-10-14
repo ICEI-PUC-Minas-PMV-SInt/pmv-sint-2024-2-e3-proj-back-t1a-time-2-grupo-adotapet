@@ -40,3 +40,33 @@ Achei interessante a praticidade do framework do MVC, pois acelera a produção 
 - Tela de Login
 
   ![Diagrama ER Adota Pet](img/tela-login.png)
+
+
+## Usuários
+
+Feito por: Vinícius Mendes
+
+Descrição: CRUD em MVC que interage com a tabela "Usuarios" do banco de dados "AdotaPet". Já estava familiarizado com o MVC em JS, de início, achei o código e estrutura em C#
+um pouco poluídos, mas logo me acostumei. Adorei a praticidade do .NET, excelente para produtividade.
+
+
+- Listagem de usuários
+
+  ![Diagrama ER Adota Pet](img/listagem-usuarios.png)
+
+- Detalhes de usuário
+
+  ![Diagrama ER Adota Pet](img/detalhes-usuario.png)
+
+- Cadastrar usuário
+
+  ![Diagrama ER Adota Pet](img/cadastrar-usuario.png)
+
+- Editar Usuário
+  
+  ![Diagrama ER Adota Pet](img/editar-usuario.png)
+
+- Excluir Usuário
+
+  ![Diagrama ER Adota Pet](img/excluir-usuario.png)
+
