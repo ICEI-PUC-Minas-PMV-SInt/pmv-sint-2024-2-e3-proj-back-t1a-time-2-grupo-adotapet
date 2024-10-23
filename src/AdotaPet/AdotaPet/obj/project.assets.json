@@ -7784,19 +7784,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\biaig\\.nuget\\packages\\": {}
+    "C:\\Users\\Mendes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\AdotaPet\\AdotaPet.csproj",
+      "projectUniqueName": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\AdotaPet\\AdotaPet.csproj",
       "projectName": "AdotaPet",
-      "projectPath": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\AdotaPet\\AdotaPet.csproj",
-      "packagesPath": "C:\\Users\\biaig\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\AdotaPet\\obj\\",
+      "projectPath": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\AdotaPet\\AdotaPet.csproj",
+      "packagesPath": "C:\\Users\\Mendes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\AdotaPet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\biaig\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mendes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

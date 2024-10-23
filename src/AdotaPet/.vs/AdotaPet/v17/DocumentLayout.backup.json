@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\",
+  "WorkspaceRootPath": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|c:\\users\\biaig\\source\\repos\\puc\\adotapet\\adotapet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|c:\\users\\mendes\\downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\adotapet\\adotapet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|solutionrelative:adotapet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|c:\\users\\biaig\\source\\repos\\puc\\adotapet\\adotapet\\views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|solutionrelative:adotapet\\views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|c:\\users\\mendes\\downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\adotapet\\adotapet\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|solutionrelative:adotapet\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|c:\\users\\biaig\\source\\repos\\puc\\adotapet\\adotapet\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|solutionrelative:adotapet\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|c:\\users\\mendes\\downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\adotapet\\adotapet\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|solutionrelative:adotapet\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|c:\\users\\biaig\\source\\repos\\puc\\adotapet\\adotapet\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|solutionrelative:adotapet\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|c:\\users\\mendes\\downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\adotapet\\adotapet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{113F80C8-4575-4618-8394-5D7DE5DF3169}|AdotaPet\\AdotaPet.csproj|solutionrelative:adotapet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\AdotaPet\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\AdotaPet\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AdotaPet\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\AdotaPet\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\AdotaPet\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "AdotaPet\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwB8AAABxAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-18T03:02:31.336Z",
               "IsPinned": true,
@@ -45,40 +45,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\AdotaPet\\Views\\Usuarios\\Login.cshtml",
-              "RelativeDocumentMoniker": "AdotaPet\\Views\\Usuarios\\Login.cshtml",
-              "ToolTip": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\AdotaPet\\Views\\Usuarios\\Login.cshtml",
-              "RelativeToolTip": "AdotaPet\\Views\\Usuarios\\Login.cshtml",
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\AdotaPet\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "AdotaPet\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\AdotaPet\\Models\\Usuario.cs",
+              "RelativeToolTip": "AdotaPet\\Models\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T03:15:22.142Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T15:27:23.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\AdotaPet\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "AdotaPet\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\AdotaPet\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "AdotaPet\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBQAAAArAAAAAAAAAA==",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\AdotaPet\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AdotaPet\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\AdotaPet\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "AdotaPet\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T03:14:14.646Z",
+              "WhenOpened": "2024-10-23T15:27:18.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\AdotaPet\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "AdotaPet\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\biaig\\source\\repos\\PUC\\AdotaPet\\AdotaPet\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "AdotaPet\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T03:06:35.131Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\AdotaPet\\appsettings.json",
+              "RelativeDocumentMoniker": "AdotaPet\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mendes\\Downloads\\pmv-sint-2024-2-e3-proj-back-t1a-time-2-grupo-adotapet\\src\\AdotaPet\\AdotaPet\\appsettings.json",
+              "RelativeToolTip": "AdotaPet\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-23T15:24:24.341Z",
               "EditorCaption": ""
             }
           ]
