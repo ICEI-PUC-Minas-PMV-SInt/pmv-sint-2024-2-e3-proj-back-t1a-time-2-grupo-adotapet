@@ -98,4 +98,5 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 
 
 
-![diagrama de casos de uso atual](https://github.com/user-attachments/assets/78066811-4a11-42f8-9cf7-1e07985d901e)
+
+![diagrama de casos de uso corrigido](https://github.com/user-attachments/assets/d117616a-bf13-4332-a702-a4695000d9a2)
