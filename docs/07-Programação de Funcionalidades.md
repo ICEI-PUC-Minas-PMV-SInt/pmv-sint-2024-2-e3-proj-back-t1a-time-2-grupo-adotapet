@@ -70,3 +70,20 @@ um pouco poluídos, mas logo me acostumei. Adorei a praticidade do .NET, excelen
 
   ![Diagrama ER Adota Pet](img/excluir-usuario.png)
 
+
+# Funcionalidades por tipo de perfil
+
+|                                              | Usuário comum | Administrador |
+| -------------------------------------------- | ------------- | ------------- |
+| Publicar anúncio                             | Sim           | Sim           |
+| Editar anúncio                               | Sim           | Sim           |
+| Deletar anúncio                              | Sim           | Sim           |
+| Visualizar detalhes do anúncio               | Sim           | Sim           |
+| Editar perfil                                | Sim           | Sim           |
+| Excluir perfil                               | Sim           | Sim           |
+| Curtir anúncio                               | Sim           | Sim           |
+| Denunciar anúncio                            | Sim           | Sim           |
+| Deletar anúncio
+
+publicado por outro usuário | Não           | Sim           |
+
