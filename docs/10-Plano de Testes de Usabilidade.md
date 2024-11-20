@@ -1,30 +1,30 @@
 # Plano de Testes de Usabilidade
 
-##1. Introdução 
+## 1. Introdução 
 
-###1.1 Objetivo do Teste 
+### 1.1 Objetivo do Teste 
 
 O tipo de teste aplicado no nosso projeto será o teste de aprendizado in-person com usuários que nunca tiveram contato com a nossa plataforma e com usuários que já tiveram contato superficial com a plataforma para termos um Feedback de melhoria. 
 
-###1.2 Escopo 
+### 1.2 Escopo 
 
 Os aspectos testados serão a eficiência e a facilidade em realizar o cadastro, login e a publicação da postagem em dispositivos móveis e desktop. 
 
   
 
-##2.  Método de Teste 
+## 2.  Método de Teste 
 
-###2.1 Tipo de teste 
+### 2.1 Tipo de teste 
 
 - O teste será de usabilidade moderada, onde o usuário será observado por um dos integrantes do grupo AdotaPet. 
 
-###2.2 Técnica de coleta de dados 
+### 2.2 Técnica de coleta de dados 
 
 - Observação direta  
 
 - Entrevista pós-teste 
 
-##3 Cenários de Teste 
+## 3 Cenários de Teste 
 
 Cenário 1: Realizar o cadastro e o login no sistema. 
 
@@ -40,9 +40,9 @@ Cenário 6: Excluir um anúncio.
 
 Cenário 7: Editar e salvar as informações pessoais. 
 
-##4. Participantes 
+## 4. Participantes 
 
-###4.1 Perfil 
+### 4.1 Perfil 
 
 - Os participantes terão idades variadas, desde adolescentes a partir de 14 anos até idosos 
 
@@ -54,9 +54,9 @@ Serão convidados 10 participantes de características distintas, sem conexão p
 
  
 
-##5. Tarefas de Teste 
+## 5. Tarefas de Teste 
 
-###5.1 Descrição das Tarefas 
+### 5.1 Descrição das Tarefas 
 
 O usuário deve conseguir realizá-las sem consultar ajuda. 
 
@@ -95,10 +95,10 @@ O usuário deve conseguir realizá-las sem consultar ajuda.
     * Critérios de sucesso: O usuário deve conseguir editar e salvar informações pessoais sem erros.
     * Tempo estimado de conclusão: 2 minutos e 45 segundos 
 
-##6. Ambiente de Teste
+## 6. Ambiente de Teste
 
-###6.1 Configuração do Ambiente
+### 6.1 Configuração do Ambiente
 Os testes serão executados em dispositivos móveis e desktop de diversos sistemas operacionais e navegadores diversos.
 
-###6.2 Ferramentas de Teste
+### 6.2 Ferramentas de Teste
 Os testes serão gravados para que futuramente sejam avaliadas as reações de cada usuário ao realizar os testes.
