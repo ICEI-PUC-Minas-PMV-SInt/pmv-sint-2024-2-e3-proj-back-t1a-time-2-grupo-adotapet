@@ -73,6 +73,8 @@ um pouco poluídos, mas logo me acostumei. Adorei a praticidade do .NET, excelen
 
 # Funcionalidades por tipo de perfil
 
+A tabela abaixo descreve quais atividades podem ser executadas por cada tipo de perfil.
+
 |                                              | Usuário comum | Administrador |
 | -------------------------------------------- | ------------- | ------------- |
 | Publicar anúncio                             | Sim           | Sim           |
