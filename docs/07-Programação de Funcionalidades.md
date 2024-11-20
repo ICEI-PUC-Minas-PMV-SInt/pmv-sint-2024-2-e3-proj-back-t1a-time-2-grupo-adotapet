@@ -83,7 +83,5 @@ um pouco poluídos, mas logo me acostumei. Adorei a praticidade do .NET, excelen
 | Excluir perfil                               | Sim           | Sim           |
 | Curtir anúncio                               | Sim           | Sim           |
 | Denunciar anúncio                            | Sim           | Sim           |
-| Deletar anúncio
-
-publicado por outro usuário | Não           | Sim           |
+| Deletar anúncio publicado por outro usuário  | Não           | Sim           |
 
