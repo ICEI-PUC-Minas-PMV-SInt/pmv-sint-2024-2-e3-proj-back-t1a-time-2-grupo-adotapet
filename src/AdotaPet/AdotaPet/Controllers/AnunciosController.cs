@@ -14,7 +14,7 @@ namespace AdotaPet.Controllers
 
         public async Task<ActionResult> Index() 
         {
-            var dados = await _context.Anuncios.ToListAsync();
+            var dados = await _context.Anuncios.Where((anuncio) => anuncio.Status == 0).ToListAsync();
 
             return View(dados);
         }
@@ -29,6 +29,13 @@ namespace AdotaPet.Controllers
         public async Task<ActionResult> Create(Anuncio anuncio)
         {
             if(ModelState.IsValid) {
+                anuncio.Status = StatusAnuncio.Publicado;
+                anuncio.DataPostagem = DateTime.Now;
+
+                // TODO: TEMPORARIO ATE TER LOGIN IMPLEMENTADO
+                Usuario firstUser = await _context.Usuarios.FirstAsync();
+                anuncio.UsuarioId= firstUser.Id;
+
                 _context.Anuncios.Add(anuncio); 
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
@@ -121,8 +128,9 @@ namespace AdotaPet.Controllers
             {
                 return NotFound();
             }
-
-            _context.Anuncios.Remove(dados);
+            dados.Status = StatusAnuncio.Deletado;
+            _context.Anuncios.Update(dados);
+            //_context.Anuncios.Remove(dados);
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Index");

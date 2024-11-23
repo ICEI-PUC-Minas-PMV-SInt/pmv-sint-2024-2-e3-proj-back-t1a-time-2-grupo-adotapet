@@ -19,13 +19,13 @@
                 @Html.DisplayNameFor(model => model.Descricao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Tipo)
+                @Html.DisplayNameFor(model => model.CategoriaAnimal)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Raca)
+                @Html.DisplayNameFor(model => model.RacaAnimal)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Idade)
+                @Html.DisplayNameFor(model => model.IdadeAnimal)
             </th>
             <th></th>
         </tr>
@@ -40,16 +40,16 @@
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Tipo)
+                @Html.DisplayFor(modelItem => item.CategoriaAnimal)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Raca)
+                @Html.DisplayFor(modelItem => item.RacaAnimal)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Idade)
+                @Html.DisplayFor(modelItem => item.IdadeAnimal)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a>
                 <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
             </td>
