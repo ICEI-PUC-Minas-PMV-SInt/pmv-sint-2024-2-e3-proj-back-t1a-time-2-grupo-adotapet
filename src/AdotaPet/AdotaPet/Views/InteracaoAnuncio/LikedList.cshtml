@@ -6,13 +6,13 @@
     ViewData["Title"] = "Anúncios";
 }
 
-<h1>Anúncios</h1>
+<h1>TESTEE</h1>
 
 <p>
     <a asp-action="Create">Criar novo Anúncio</a>
 </p>
 <table class="table">
-    <thead> 
+    <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Anuncio.Titulo)
@@ -35,23 +35,23 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
-            <td>
+            <tr>
+                <td>
                     @Html.DisplayFor(modelItem => item.Anuncio.Titulo)
-            </td>
-            <td>
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.Anuncio.Descricao)
-            </td>
-            <td>
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.Anuncio.CategoriaAnimal)
-            </td>
-            <td>
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.Anuncio.RacaAnimal)
-            </td>
-            <td>
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.Anuncio.IdadeAnimal)
-            </td>
-            <td>
+                </td>
+                <td>
                     <a asp-action="Edit" asp-route-id="@item.Anuncio.Id">Editar</a>
                     <a asp-action="Details" asp-route-id="@item.Anuncio.Id">Detalhes</a> |
                     <a asp-action="Delete" asp-route-id="@item.Anuncio.Id">Apagar</a>
@@ -60,8 +60,8 @@
 
                     </a>
 
-            </td>
-        </tr>
-}
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
