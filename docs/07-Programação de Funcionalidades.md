@@ -91,12 +91,16 @@ A tabela abaixo descreve quais atividades podem ser executadas por cada tipo de 
 
 ## Padrões de Projeto GoF
 
+O projeto usa os seguintes padrões de projeto GoF:
+
 - Singleton: um padrão de design criacional que permite garantir que uma classe tenha apenas uma instância, enquanto fornece um ponto de acesso global a essa instância.
 - Decorator: um padrão de design estrutural que permite anexar novos comportamentos aos objetos, colocando-os dentro de objetos especiais do invólucro que contêm os comportamentos.
 - Composite: um padrão de design estrutural que permite a combinação de componentes menores, como views parciais e layouts, para formar uma interface.
 - Visitor: um padrão de design comportamental que permite separar algoritmos dos objetos nos quais eles operam.
   
 ## Padrões de indentação e formatação
+
+O projeto usa os seguintes padrões de indentação e formatação:
 
 - Indentação de 2 espaços.
 - Preferência a guard clauses sempre que possivel.
