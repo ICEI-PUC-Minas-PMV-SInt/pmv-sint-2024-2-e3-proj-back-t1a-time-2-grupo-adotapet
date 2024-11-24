@@ -1,4 +1,6 @@
-﻿@model IEnumerable<AdotaPet.Models.Anuncio>
+﻿@using AdotaPet.Controllers
+@model IEnumerable<AdotaPet.ViewModels.AnuncioInteracaoViewModel>
+
 
 @{
     ViewData["Title"] = "Anúncios";
@@ -10,48 +12,54 @@
     <a asp-action="Create">Criar novo Anúncio</a>
 </p>
 <table class="table">
-    <thead>
+    <thead> 
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Titulo)
+                @Html.DisplayNameFor(model => model.Anuncio.Titulo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Descricao)
+                @Html.DisplayNameFor(model => model.Anuncio.Descricao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CategoriaAnimal)
+                @Html.DisplayNameFor(model => model.Anuncio.CategoriaAnimal)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.RacaAnimal)
+                @Html.DisplayNameFor(model => model.Anuncio.RacaAnimal)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdadeAnimal)
+                @Html.DisplayNameFor(model => model.Anuncio.IdadeAnimal)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+        @foreach (var item in Model)
+        {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Titulo)
+                    @Html.DisplayFor(modelItem => item.Anuncio.Titulo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Descricao)
+                    @Html.DisplayFor(modelItem => item.Anuncio.Descricao)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CategoriaAnimal)
+                    @Html.DisplayFor(modelItem => item.Anuncio.CategoriaAnimal)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.RacaAnimal)
+                    @Html.DisplayFor(modelItem => item.Anuncio.RacaAnimal)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdadeAnimal)
+                    @Html.DisplayFor(modelItem => item.Anuncio.IdadeAnimal)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a>
-                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+                    <a asp-action="Edit" asp-route-id="@item.Anuncio.Id">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.Anuncio.Id">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Anuncio.Id">Apagar</a>
+                    <a asp-action="Like" asp-route-id="@item.Anuncio.Id">
+                        @(item.TemLike ? "Curtir" : "Remover curtida")
+
+                    </a>
+
             </td>
         </tr>
 }

@@ -1,6 +1,8 @@
 ﻿using AdotaPet.Models;
+using AdotaPet.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace AdotaPet.Controllers
 {
@@ -16,7 +18,22 @@ namespace AdotaPet.Controllers
         {
             var dados = await _context.Anuncios.Where((anuncio) => anuncio.Status == 0).ToListAsync();
 
-            return View(dados);
+            List<AnuncioInteracaoViewModel> anuncios = [];
+
+            // TODO: TEMPORARIO ATE TER LOGIN IMPLEMENTADO
+            Usuario firstUser = await _context.Usuarios.FirstAsync();
+
+            for (int i = 0; i < dados.Count; i++){
+                var temLike = await _context.InteracaoAnuncio.Where((e) => e.UsuarioId == firstUser.Id && e.AnuncioId == dados[i].Id && e.InteracaoId == 1).ToListAsync();
+                AnuncioInteracaoViewModel anuncioCompleto = new AnuncioInteracaoViewModel();
+                
+                anuncioCompleto.Anuncio = dados[i];
+                anuncioCompleto.TemLike = !temLike.IsNullOrEmpty();
+                
+                anuncios.Add(anuncioCompleto);
+            }
+
+            return View(anuncios);
         }
 
         public ActionResult Create()
@@ -135,5 +152,41 @@ namespace AdotaPet.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public async Task<ActionResult> Like(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var anuncio = await _context.FindAsync<Anuncio>(id);
+            if (anuncio == null)
+            {
+                return NotFound();
+            }
+
+            // TODO: TEMPORARIO ATE TER LOGIN IMPLEMENTADO
+            Usuario firstUser = await _context.Usuarios.FirstAsync();
+
+            var interaction = await _context.InteracaoAnuncio.Where((e)=> e.UsuarioId == firstUser.Id && e.AnuncioId == id && e.InteracaoId == 1).ToListAsync();
+            if (!interaction.IsNullOrEmpty())
+            {
+                _context.InteracaoAnuncio.Remove(interaction.First());
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+
+            InteracaoAnuncio interacaoAnuncio = new InteracaoAnuncio();
+            interacaoAnuncio.UsuarioId = firstUser.Id;
+            interacaoAnuncio.AnuncioId = anuncio.Id;
+            interacaoAnuncio.InteracaoId = 1;
+
+            _context.InteracaoAnuncio.Add(interacaoAnuncio);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }
