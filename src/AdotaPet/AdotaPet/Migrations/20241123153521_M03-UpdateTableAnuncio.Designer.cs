@@ -4,6 +4,7 @@ using AdotaPet.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AdotaPet.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241123153521_M03-UpdateTableAnuncio")]
+    partial class M03UpdateTableAnuncio
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,50 +67,6 @@ namespace AdotaPet.Migrations
                     b.ToTable("Anuncios");
                 });
 
-            modelBuilder.Entity("AdotaPet.Models.Interacao", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("DescricaoInteracao")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Interacao");
-                });
-
-            modelBuilder.Entity("AdotaPet.Models.InteracaoAnuncio", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AnuncioId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("InteracaoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AnuncioId");
-
-                    b.HasIndex("InteracaoId");
-
-                    b.HasIndex("UsuarioId");
-
-                    b.ToTable("InteracaoAnuncio");
-                });
-
             modelBuilder.Entity("AdotaPet.Models.Usuario", b =>
                 {
                     b.Property<int>("Id")
@@ -144,33 +103,6 @@ namespace AdotaPet.Migrations
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("AdotaPet.Models.InteracaoAnuncio", b =>
-                {
-                    b.HasOne("AdotaPet.Models.Anuncio", "Anuncio")
-                        .WithMany()
-                        .HasForeignKey("AnuncioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AdotaPet.Models.Interacao", "Interacao")
-                        .WithMany()
-                        .HasForeignKey("InteracaoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AdotaPet.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Anuncio");
-
-                    b.Navigation("Interacao");
 
                     b.Navigation("Usuario");
                 });

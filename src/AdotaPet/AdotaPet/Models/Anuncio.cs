@@ -18,14 +18,39 @@ namespace AdotaPet.Models
         [Display(Name = "Descrição")]
         public string Descricao { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório informar tipo!")]
-        public string Tipo { get; set; }
+        public StatusAnuncio Status { get; set; }
+
+        public DateTime DataPostagem { get; set; }
+
+        [Required(ErrorMessage = "Obrigatório informar categoria!")]
+        [Display(Name = "Categoria")]
+        public Categoria CategoriaAnimal { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar raça!")]
         [Display(Name = "Raça")]
-        public string Raca { get; set; }
+        public string RacaAnimal { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar idade!")]
-        public double Idade { get; set; }
+        [Display(Name = "Idade")]
+        public double IdadeAnimal { get; set; }
+
+        [Display(Name = "Usuário")]
+        public int UsuarioId { get; set; }
+
+        [ForeignKey("UsuarioId")]
+        public Usuario Usuario { get; set; }
+    }
+
+    public enum StatusAnuncio
+    {
+        Publicado,
+        Deletado
+    }
+
+    public enum Categoria
+    {
+        Ave,
+        Felino,
+        Canino
     }
 }
