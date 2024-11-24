@@ -6,11 +6,9 @@
     ViewData["Title"] = "Anúncios";
 }
 
-<h1>Favoritos</h1>
+<h1>Denunciados</h1>
 
-<p>
-    <a asp-action="Create">Criar novo Anúncio</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -52,14 +50,7 @@
                     @Html.DisplayFor(modelItem => item.Anuncio.IdadeAnimal)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-controller="Anuncios" asp-route-id="@item.Anuncio.Id">Editar</a> |
-                    <a asp-action="Details" asp-controller="Anuncios" asp-route-id="@item.Anuncio.Id">Detalhes</a> |
-                    <a asp-action="Delete" asp-controller="Anuncios" asp-route-id="@item.Anuncio.Id">Apagar</a> |
-                    <a asp-action="Like" asp-route-id="@item.Anuncio.Id">
-                        @(item.TemLike ? "Remover curtida" : "Curtir")
-
-                    </a>
-
+                    <a asp-action="Details" asp-controller="Anuncios" asp-route-id="@item.Anuncio.Id">Detalhes</a>
                 </td>
             </tr>
         }

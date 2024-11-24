@@ -52,12 +52,11 @@
                     @Html.DisplayFor(modelItem => item.Anuncio.IdadeAnimal)
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.Anuncio.Id">Editar</a>
+                    <a asp-action="Edit" asp-route-id="@item.Anuncio.Id">Editar</a> |
                     <a asp-action="Details" asp-route-id="@item.Anuncio.Id">Detalhes</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Anuncio.Id">Apagar</a>
+                    <a asp-action="Delete" asp-route-id="@item.Anuncio.Id">Apagar</a> |
                     <a asp-action="Like" asp-route-id="@item.Anuncio.Id">
                         @(item.TemLike ? "Remover curtida" : "Curtir")
-
                     </a>
 
             </td>

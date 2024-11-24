@@ -79,6 +79,32 @@ namespace AdotaPet.Controllers
             return RedirectToAction(nameof(LikedList));
         }
 
+
+
+        public async Task<ActionResult> ReportedList()
+        {
+
+            // TODO: TEMPORARIO ATE TER LOGIN IMPLEMENTADO
+            Usuario firstUser = await _context.Usuarios.FirstAsync();
+
+            //var dados = await _context.Anuncios.Where((anuncio) => anuncio.Status == 0).ToListAsync();
+            var dados = await _context.InteracaoAnuncio.Where((interacao) => interacao.InteracaoId == 2).Include(e => e.Anuncio).ToListAsync();
+
+            List<AnuncioInteracaoViewModel> anuncios = [];
+
+            for (int i = 0; i < dados.Count; i++)
+            {
+                AnuncioInteracaoViewModel anuncioCompleto = new AnuncioInteracaoViewModel();
+
+                anuncioCompleto.Anuncio = dados[i].Anuncio;
+                //anuncioCompleto.TemLike = true;
+
+                anuncios.Add(anuncioCompleto);
+            }
+
+            return View(anuncios);
+        }
+
     }
 
 }
