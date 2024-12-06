@@ -10,6 +10,7 @@ namespace AdotaPet.Models
         public DbSet<Anuncio> Anuncios { get; set; }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Interacao> Interacao { get; set; }
         public DbSet<InteracaoAnuncio> InteracaoAnuncio { get; set; }
     }
