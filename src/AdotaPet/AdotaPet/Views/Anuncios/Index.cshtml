@@ -1,4 +1,5 @@
 ﻿@using AdotaPet.Controllers
+@using System.Security.Claims
 @model IEnumerable<AdotaPet.ViewModels.AnuncioInteracaoViewModel>
 
 
@@ -8,9 +9,11 @@
 
 <h1>Anúncios</h1>
 
-<p>
-    <a asp-action="Create">Criar novo Anúncio</a>
-</p>
+@if(User.Identity.IsAuthenticated){
+    <p>
+        <a asp-action="Create" class="btn btn-success">Criar novo Anúncio</a>
+    </p>
+}
 <table class="table">
     <thead> 
         <tr>
@@ -52,12 +55,28 @@
                     @Html.DisplayFor(modelItem => item.Anuncio.IdadeAnimal)
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.Anuncio.Id">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.Anuncio.Id">Detalhes</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Anuncio.Id">Apagar</a> |
-                    <a asp-action="Like" asp-route-id="@item.Anuncio.Id">
-                        @(item.TemLike ? "Remover curtida" : "Curtir")
-                    </a>
+                    @if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value == @item.Anuncio.UsuarioId.ToString())
+                    {
+                        <div>
+                            <a asp-action="Edit" asp-route-id="@item.Anuncio.Id" class="btn btn-primary">Editar</a> |
+                        </div>
+                    }
+                    <a asp-action="Details" asp-route-id="@item.Anuncio.Id" class="btn btn-warning">Detalhes</a> |
+                    @if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value == @item.Anuncio.UsuarioId.ToString())
+                    {
+                        <div>
+                            <a asp-action="Delete" asp-route-id="@item.Anuncio.Id" class="btn btn-danger">Apagar</a> |
+                        </div>
+                    }
+                    
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div>
+                            <a asp-action="Like" asp-route-id="@item.Anuncio.Id">
+                                @(item.TemLike ? "Remover curtida" : "Curtir")
+                            </a>
+                        </div>
+                    }
 
             </td>
         </tr>
