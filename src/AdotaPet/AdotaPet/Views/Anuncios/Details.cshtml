@@ -1,4 +1,5 @@
 ﻿@model AdotaPet.Models.Anuncio
+@using System.Security.Claims
 
 @{
     ViewData["Title"] = "Detalhes";
@@ -43,8 +44,27 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
-    <a asp-action="Report" asp-route-id="@Model?.Id">Denunciar</a> |
-    <a asp-action="Delete" asp-route-id="@Model?.Id">Apagar</a> |
+    @if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value == Model.UsuarioId.ToString())
+     {
+         <div>
+
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
+     </div>
+
+     }
+    @if (User.Identity.IsAuthenticated && User.FindFirst(ClaimTypes.NameIdentifier)?.Value != Model.UsuarioId.ToString())
+    {
+        <div>
+
+        <a asp-action="Report" asp-route-id="@Model?.Id">Denunciar</a> |
+    </div>
+
+    }
+    @if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value == Model.UsuarioId.ToString() || User.IsInRole("Admin"))
+    {
+        <div>
+            <a asp-action="Delete" asp-route-id="@Model?.Id">Apagar</a> |
+        </div>
+    }
     <a asp-action="Index">Voltar</a>
 </div>

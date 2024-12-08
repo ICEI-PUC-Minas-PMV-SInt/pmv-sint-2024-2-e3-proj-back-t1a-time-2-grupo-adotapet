@@ -1,11 +1,14 @@
 ﻿using AdotaPet.Models;
 using AdotaPet.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-
+using System.Net.NetworkInformation;
+using System.Security.Claims;
 namespace AdotaPet.Controllers
 {
+    [Authorize]
     public class AnunciosController : Controller
     {
         private readonly AppDbContext _context;
@@ -14,20 +17,20 @@ namespace AdotaPet.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         public async Task<ActionResult> Index() 
         {
             var dados = await _context.Anuncios.Where((anuncio) => anuncio.Status == 0).ToListAsync();
 
             List<AnuncioInteracaoViewModel> anuncios = [];
 
-            // TODO: TEMPORARIO ATE TER LOGIN IMPLEMENTADO
-            Usuario firstUser = await _context.Usuarios.FirstAsync();
+            string idLoggedUser = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
             for (int i = 0; i < dados.Count; i++){
-                var temDenuncia = await _context.InteracaoAnuncio.Where((e) => e.UsuarioId == firstUser.Id && e.AnuncioId == dados[i].Id && e.InteracaoId == 2).ToListAsync();
+                var temDenuncia = await _context.InteracaoAnuncio.Where((e) => e.UsuarioId.ToString() == idLoggedUser && e.AnuncioId == dados[i].Id && e.InteracaoId == 2).ToListAsync();
                 if (temDenuncia.IsNullOrEmpty())
                 {
-                    var temLike = await _context.InteracaoAnuncio.Where((e) => e.UsuarioId == firstUser.Id && e.AnuncioId == dados[i].Id && e.InteracaoId == 1).ToListAsync();
+                    var temLike = await _context.InteracaoAnuncio.Where((e) => e.UsuarioId.ToString() == idLoggedUser && e.AnuncioId == dados[i].Id && e.InteracaoId == 1).ToListAsync();
 
                     AnuncioInteracaoViewModel anuncioCompleto = new AnuncioInteracaoViewModel();
 
@@ -54,8 +57,13 @@ namespace AdotaPet.Controllers
                 anuncio.Status = StatusAnuncio.Publicado;
                 anuncio.DataPostagem = DateTime.Now;
 
-                // TODO: TEMPORARIO ATE TER LOGIN IMPLEMENTADO
-                Usuario firstUser = await _context.Usuarios.FirstAsync();
+                string idLoggedUser = User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "";
+                Usuario? firstUser = await _context.Usuarios.Where((user)=>user.Id.ToString() == idLoggedUser).FirstOrDefaultAsync();
+                if (firstUser == null)
+                {
+                    return NotFound();
+                }
+
                 anuncio.UsuarioId= firstUser.Id;
 
                 _context.Anuncios.Add(anuncio); 
@@ -101,7 +109,7 @@ namespace AdotaPet.Controllers
             return View();
         }
 
-
+        [AllowAnonymous]
         public async Task<ActionResult> Details(int? id)
         {
             if (id == null)
@@ -171,8 +179,12 @@ namespace AdotaPet.Controllers
                 return NotFound();
             }
 
-            // TODO: TEMPORARIO ATE TER LOGIN IMPLEMENTADO
-            Usuario firstUser = await _context.Usuarios.FirstAsync();
+            string idLoggedUser = User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "";
+            Usuario? firstUser = await _context.Usuarios.Where((user) => user.Id.ToString() == idLoggedUser).FirstOrDefaultAsync();
+            if (firstUser == null)
+            {
+                return NotFound();
+            }
 
             var interaction = await _context.InteracaoAnuncio.Where((e)=> e.UsuarioId == firstUser.Id && e.AnuncioId == id && e.InteracaoId == 1).ToListAsync();
             if (!interaction.IsNullOrEmpty())
@@ -205,8 +217,12 @@ namespace AdotaPet.Controllers
                 return NotFound();
             }
 
-            // TODO: TEMPORARIO ATE TER LOGIN IMPLEMENTADO
-            Usuario firstUser = await _context.Usuarios.FirstAsync();
+            string idLoggedUser = User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "";
+            Usuario? firstUser = await _context.Usuarios.Where((user) => user.Id.ToString() == idLoggedUser).FirstOrDefaultAsync();
+            if (firstUser == null)
+            {
+                return NotFound();
+            }
 
             var interaction = await _context.InteracaoAnuncio.Where((e) => e.UsuarioId == firstUser.Id && e.AnuncioId == id && e.InteracaoId == 2).ToListAsync();
             if (!interaction.IsNullOrEmpty())
