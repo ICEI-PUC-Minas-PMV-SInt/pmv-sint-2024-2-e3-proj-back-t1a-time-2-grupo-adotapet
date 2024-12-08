@@ -60,7 +60,7 @@
     </div>
 
     }
-    @if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value == Model.UsuarioId.ToString())
+    @if (User.FindFirst(ClaimTypes.NameIdentifier)?.Value == Model.UsuarioId.ToString() || User.IsInRole("Admin"))
     {
         <div>
             <a asp-action="Delete" asp-route-id="@Model?.Id">Apagar</a> |
