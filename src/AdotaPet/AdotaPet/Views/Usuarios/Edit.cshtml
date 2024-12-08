@@ -11,6 +11,8 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Usuario.Id" />
+            <input type="hidden" asp-for="Pessoa.Id" />
+            <input type="hidden" asp-for="Pessoa.UsuarioId" />
             <div class="form-group">
                 <label asp-for="Pessoa.Nome" class="control-label"></label>
                 <input asp-for="Pessoa.Nome" class="form-control" />
