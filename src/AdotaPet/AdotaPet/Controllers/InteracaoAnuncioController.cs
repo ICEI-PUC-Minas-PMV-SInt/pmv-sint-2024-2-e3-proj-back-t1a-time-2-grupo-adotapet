@@ -40,14 +40,16 @@ namespace AdotaPet.Controllers
 
             for (int i = 0; i < dados.Count; i++)
             {
-              AnuncioInteracaoViewModel anuncioCompleto = new AnuncioInteracaoViewModel();
+                if (dados[i].Anuncio.Status != StatusAnuncio.Deletado)
+                {
+                    AnuncioInteracaoViewModel anuncioCompleto = new AnuncioInteracaoViewModel();
 
-                anuncioCompleto.Anuncio = dados[i].Anuncio;
-                anuncioCompleto.TemLike = true;
+                    anuncioCompleto.Anuncio = dados[i].Anuncio;
+                    anuncioCompleto.TemLike = true;
 
-                anuncios.Add(anuncioCompleto);
+                    anuncios.Add(anuncioCompleto);
+                }
             }
-
             return View(anuncios);
         }
 
